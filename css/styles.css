@@ -134,7 +134,38 @@ p, h1, h2, h3, h4, h5, h6 {
     .projects-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
+      align-items: center;
       text-align: center;
+      min-height: 100vh;
+      gap: 20px;
     }
+
+    .project-cards {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-card, .project-card-two {
+      max-width: 100vw;
+    }
+
+    .nr-project {
+      width: 250px;
+      height: 150px;
+      justify-self: center;
+    }
+
+    .meal-plan {
+      width: 250px;
+      height: 150px;
+      justify-self: center;
+    }
+
+    .project-title {
+      line-height: 3;
+    }
+
   /* FOOTER */
