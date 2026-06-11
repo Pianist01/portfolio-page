@@ -12,25 +12,26 @@
   <header>
     <p>Steven Peralta</p>
     <nav>
-      <ul>
-        <li><a href="#"></a>Home</li>
-        <li><a href="#"></a>Portfolio</li>
-        <li><a href="#"></a>Contact</li>
+      <ul class="header-list">
+        <li id="about" class="links"><a href="#about-section"></a> About</li>
+        <li id="portfolio" class="links"><a href="#project-section"></a>Portfolio</li>
+        <li id="contact" class="links"><a href="#footer-section"></a>Contact</li>
       </ul>
     </nav>
   </header>
 
   <main>
     <div class="container">
-      <section class="hero">
+      <section id="hero-section" class="hero">
         <div class="hero-content">
           <h1>Hello! I'm Steven</h1>
           <p>Front-end Developer building responsive websites, landing pages, and user focused experiences.</p>
+          <p>Current tech stack: HTML5, CSS3, JavaScript.</p>
           <button>View My Work</button>
         </div>
       </section>
 
-      <section class="about-me">
+      <section id="about-section" class="about-me">
         <div class="about-content">
           <h2>Get to Know Me</h2>
           <p>Hello! I am a 24-year-old front-end developer based in California. I am interested in creating accessible and user-friendly web applications. My current tech stack that I use is HTML, CSS, and JavaScript. However, I am very eager to learn new technologies and intend to also add React, TypeScript, and Python under my belt.</p>
@@ -49,7 +50,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="project-section" class="projects">
         <div class="projects-hero">
           <h2>My Projects</h2>
         </div>
@@ -59,23 +60,30 @@
           <p>Here are some of the projects I have worked on(feel free to click on each card to view the project):</p>
           <div class="project-cards">
             <div class="project-card">
-              <img class="nr-project" src="/img/nr-project.jpg" alt="NR Project Image">
+              <img class="nr-project images" src="img/nr-project.jpg" alt="NR Project Image">
               <h3 class="project-title">Nuevo Remanente Website(Church)</h3>
             </div>
 
             <div class="project-card-two">
-              <img class="meal-plan" src="/img/meal-plan.png" alt="Meal Plan Image">
+              <img class="meal-plan images" src="img/meal-plan.png" alt="Meal Plan Image">
               <h3 class="project-title">Meal Plan(Desktop Only)</h3>
             </div>
 
             <div class="project-card-three">
-              <img class="keyboard" src="/img/keyboard-project.png" alt="Keyboard Landing Page Image">
-              <h3 class="project-title">Keyboard Company Landing Page(Responsive)</h3>
+              <img class="keyboard images" src="img/keyboard-project.jpg" alt="Keyboard Landing Page Image">
+              <h3 class="project-title keyboard-title">Keyboard Company Landing Page(Responsive)</h3>
             </div>
           </div>
       </section>
     </div>
   </main>
+
+  <footer id="footer-section">
+    <div class="footer-container">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">peralta.steven01@gmail.com</p>
+    </div>
+  </footer>
 </body>
 <script src="js/main.js"></script>
 </html>
