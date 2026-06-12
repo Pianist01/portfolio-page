@@ -54,10 +54,22 @@ function generateNR() {
     const exit = document.createElement('img');
     exit.classList.add('exit-icon');
     exit.src = 'img/exit.png';
-    sideContentContainer.append(exit);
+    const title = document.createElement('h2');
+    title.classList.add('nr-side-title');
+    title.textContent = 'Nuevo Remanente Website';
+    const nrDescription = document.createElement('p');
+    nrDescription.classList.add('nr-description');
+    nrDescription.textContent = 'This website was made for a local church in order to have place online where new visitors can learn more about their church.'
+    sideContentContainer.append(exit, title, nrDescription);
     projects.append(sideContentContainer);
 
     requestAnimationFrame(() => {
       sideContentContainer.classList.add('active');
+    });
+
+    exit.addEventListener('click', (e) => {
+      requestAnimationFrame(() => {
+        sideContentContainer.classList.remove('active');
+      });
     });
 }

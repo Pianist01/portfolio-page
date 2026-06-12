@@ -275,6 +275,24 @@ p, h1, h2, h3, h4, h5, h6 {
       cursor: pointer;
     }
 
+    .nr-side-title {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      justify-self: center;
+      color: white;
+      font-size: 1.3rem;
+      margin-top: 40px;
+    }
+
+    .nr-description {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      align-self: center;
+      justify-self: center;
+      font-size: 1rem;
+      color: white;
+    }
+
   /* FOOTER */
 
   .footer-container {
