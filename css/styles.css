@@ -282,6 +282,12 @@ p, h1, h2, h3, h4, h5, h6 {
       color: white;
       font-size: 1.3rem;
       margin-top: 40px;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+    
+    .side-title.active {
+      opacity: 1;
     }
 
     .description {
@@ -291,6 +297,12 @@ p, h1, h2, h3, h4, h5, h6 {
       justify-self: center;
       font-size: 1rem;
       color: white;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .description.active {
+      opacity: 1;
     }
 
     .side-btn {
@@ -302,6 +314,12 @@ p, h1, h2, h3, h4, h5, h6 {
       height: 50px;
       margin-bottom: 10px;
       border-radius: 10px;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .side-btn.active {
+      opacity: 1;
     }
 
     button:hover {
