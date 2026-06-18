@@ -69,6 +69,11 @@ exit.src = 'img/exit.png';
 sideContentContainer.append(exit);
 
 function generateNR() {
+
+    while(sideContentContainer.children.length > 1) {
+      sideContentContainer.removeChild(sideContentContainer.lastChild);
+    }
+
     const title = document.createElement('h2');
     title.classList.add('side-title');
     title.textContent = 'Nuevo Remanente Website';
@@ -112,6 +117,9 @@ function generateNR() {
 }
 
 function generateWeightTracker() {
+  while(sideContentContainer.children.length > 1) {
+    sideContentContainer.removeChild(sideContentContainer.lastChild);
+  }
   const title = document.createElement('h2');
   title.classList.add('side-title');
   title.textContent = 'Meal Plan';
@@ -154,6 +162,9 @@ function generateWeightTracker() {
 }
 
 function generateKeys() {
+  while(sideContentContainer.children.length > 1) {
+    sideContentContainer.removeChild(sideContentContainer.lastChild);
+  }
   const title = document.createElement('h2');
   title.classList.add('side-title');
   title.textContent = 'The Keys';
