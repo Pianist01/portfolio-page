@@ -59,6 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
     min-width: 100vw;
     width: 100vw;
     background-color: black;
+    justify-content: space-between;
   }
 
   header p {
@@ -71,6 +72,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
   nav {
     align-self: center;
+    margin-right: 5%;
   }
 
   .header-list {
@@ -347,9 +349,6 @@ p, h1, h2, h3, h4, h5, h6 {
   /* MEDIA QUERIES */
 
   @media (min-width: 428px) {
-    nav {
-      margin-left: 70px;
-    }
 
     .hobbies {
       text-align: center;
