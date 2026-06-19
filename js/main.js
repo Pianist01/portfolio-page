@@ -185,7 +185,7 @@ function generateKeys() {
   title.textContent = 'The Keys';
   const titleCaption = document.createElement('p');
   titleCaption.classList.add('side-title-caption');
-  titleCaption.textContent = 'HTML • CSS • JavaScript';
+  titleCaption.textContent = 'HTML • CSS';
   const keysDescription = document.createElement('p');
   keysDescription.classList.add('description');
   keysDescription.textContent = 'This project is an example landing page for an E-commerce business that sells keyboards with 3 sections. The first section of the landing page includes a hero container with brief description of product along with CTA button. The second section allows user to read why product is great, and final section allows users to read a few reviews to further convince them. At the bottom of the page is another CTA button.';
