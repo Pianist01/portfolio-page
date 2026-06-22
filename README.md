@@ -32,11 +32,11 @@ AI Development Tools
 
 Projects Featured
 
-- Nuevo Remanente
+- Nuevo Remanente: 
   Multi-page church website featuring responsive navigation and EmailJS integration.
-- Meal Plan
+- Meal Plan:
   Interactive calorie calculator that dynamically generates personalized recommendations based on user input.
-- Keyboard Landing Page
+- Keyboard Landing Page:
   Marketing focused landing page demonstrating responsive design and conversion oriented layout.
 
 What I Learned
