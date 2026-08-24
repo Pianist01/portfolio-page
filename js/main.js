@@ -57,6 +57,8 @@ images.forEach((image) => {
       generateWeightTracker();
     } else if(image.classList.contains('keyboard')) {
       generateKeys();
+    } else if(image.classList.contains('painting-project')) {
+      generateHLF();
     }
   })
 });
@@ -67,6 +69,65 @@ const exit = document.createElement('img');
 exit.classList.add('exit-icon');
 exit.src = 'img/exit.png';
 sideContentContainer.append(exit);
+
+function generateHLF() {
+  while(sideContentContainer.children.length > 1) {
+    sideContentContainer.removeChild(sideContentContainer.lastChild);
+  }
+
+  const title = document.createElement('h2');
+  title.classList.add('side-title');
+  title.textContent = 'Hector L.F. Painting & Finishing';
+
+  const titleCaption = document.createElement('p');
+  titleCaption.classList.add('side-title-caption');
+  titleCaption.textContent = 'HTML • CSS • JavaScript • EmailJS';
+
+  const paintingDescription = document.createElement('p');
+  paintingDescription.classList.add('description');
+  paintingDescription.textContent = 'This is a responsive multi-page website built for a local painting and finishing business. Developed with HTML, CSS, and JavaScript, featuring interactive service displays, scroll based animations, responsive layouts, and an EmailJS powered contact page. Built from concept to deployment based on real client requirements and feedback.';
+
+  const paintingBtn = document.createElement('button');
+  paintingBtn.classList.add('side-btn');
+  paintingBtn.textContent = 'Visit Page';
+  paintingBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('https://pianist01.github.io/westcoast-painting/', '_blank');
+  });
+
+  const paintingGit = document.createElement('button');
+  paintingGit.classList.add('git-btn');
+  paintingGit.textContent = 'View Code';
+  paintingGit.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('https://github.com/Pianist01/westcoast-painting', '_blank');
+  })
+  sideContentContainer.append(title, titleCaption, paintingDescription, paintingBtn, paintingGit);
+  projects.append(sideContentContainer);
+
+  requestAnimationFrame(() => {
+      sideContentContainer.classList.add('active');
+      title.classList.add('active');
+      titleCaption.classList.add('active');
+      paintingDescription.classList.add('active');
+      paintingBtn.classList.add('active');
+      paintingGit.classList.add('active');
+    });
+
+    exit.addEventListener('click', (e) => {
+      e.preventDefault();
+      requestAnimationFrame(() => {
+        sideContentContainer.classList.remove('active');
+        title.classList.remove('active');
+        titleCaption.classList.remove('active');
+        paintingDescription.classList.remove('active');
+        paintingBtn.classList.remove('active');
+        paintingGit.classList.remove('active');
+        title.textContent = '';
+        paintingDescription.textContent = '';
+      });
+    });
+}
 
 function generateNR() {
 
