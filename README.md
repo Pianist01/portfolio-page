@@ -32,6 +32,8 @@ AI Development Tools
 
 Projects Featured
 
+- HLF Painting & Finishing(Client Website):
+  Multi-page website for local painting business featuring responsive layouts and EmailJS integration.
 - Nuevo Remanente: 
   Multi-page church website featuring responsive navigation and EmailJS integration.
 - Meal Plan:
